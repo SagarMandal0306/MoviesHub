@@ -14,9 +14,11 @@ const HeroBanner = () => {
     const {data,loading}=useFetch("/movie/upcoming");
 
     useEffect(()=>{
-        const bg=url.backdrop+data?.results?.[Math.floor(Math.random()*20)]?.backdrop_path;
+        
+        const bg=url.poster+data?.results?.[Math.floor(Math.random()*20)]?.backdrop_path;
         setBackground(bg);
-    },[data])
+        
+    },[url])
 
 
     const searchQueryHandler=(e)=>{
@@ -29,7 +31,7 @@ const HeroBanner = () => {
     <>
     <div className="herobanner">
     {!loading &&  <div className="backdrop-img">
-            <Img src={background}/>
+            <Img src={background.toString()}/>
         </div>}
         <div className="opacity-layer"></div>
 
