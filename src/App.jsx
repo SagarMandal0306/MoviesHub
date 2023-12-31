@@ -9,7 +9,7 @@ import Home from './pages/Home/Home'
 import Search from './pages/searchResult/Search'
 import Explore from './pages/explore/Explore'
 import Details from './pages/details/Details'
-import PageNotFound from './pages/404/pageNotFound'
+import PageNotFound from './pages/404/Error'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
