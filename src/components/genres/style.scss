@@ -1,0 +1,23 @@
+@import '../../mixins.scss';
+
+
+.GenresSection{
+    display: none;
+    @include md{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+    .genresItem{
+        color: white;
+        font-size: 15px;
+        background-color: var(--pink);
+        padding: 4px;
+        margin: 1px;
+        border-radius: 5px;
+        white-space: nowrap;
+    }
+}
+

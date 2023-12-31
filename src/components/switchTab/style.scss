@@ -1,0 +1,39 @@
+.swicthTabSection{
+    background-color: white;
+    border-radius:30px ;
+    padding: 2px;
+    
+    
+    .tabsItem{
+        // padding: 0 15px;
+        position: relative;
+        cursor: pointer;
+        font-size: 18px;
+        padding: 10px;
+        span{
+            font-size: 18px;
+            padding: 0 25px;
+            width: 100px;
+            position: inherit;
+            z-index: 99;
+            color: var(--blacl);
+            font-weight: 500;
+            transition: 0.5s;
+            &.active{
+                color: white;
+            }
+        }
+
+        .activeback{
+            position: absolute;
+            background:var(--gradient);
+            width: 50%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-radius: 30px;
+            z-index: 0;
+            transition: 0.5s;
+        }
+    }
+}

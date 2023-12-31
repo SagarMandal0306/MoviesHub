@@ -1,0 +1,49 @@
+@import '../../mixins.scss';
+
+footer{
+    background-color: var(--black3);
+    text-align: center;
+    padding: 50px 10px;
+    ul li{
+        list-style-type: none;
+        display: inline-block;
+        color: rgb(182, 181, 181);
+        padding: 10px;
+        font-size: 12px;
+        @include md{
+            font-size: 15px;
+        }
+        cursor: pointer;
+    }
+    ul li:hover{
+        color: var(--pink);
+    }
+    .content{
+        color: rgb(182, 181, 181);
+        font-size: 10px;
+        @include md{
+            font-size: 14px;
+        }
+        padding: 20px;
+    }
+    .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon{
+            margin: 0 10px;
+            background-color:rgb(46, 46, 77) ;
+            color: rgb(182, 181, 181);
+            font-size: 15px;
+            @include md{
+                font-size: 20px;
+            }
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .icon:hover{
+            color: var(--pink);
+        }
+    }
+}
